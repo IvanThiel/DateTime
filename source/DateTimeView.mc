@@ -220,7 +220,6 @@ class DateTimeView extends Ui.DataField {
       if (
           (info.currentLocation!=null) && 
           (info.currentLocation.toDegrees()[0].toNumber()!=0) 
-         // (info.currentLocation.toDegrees()[1].toNumber()!=-94) // Garmin default
          ) 
      {
         Storage.setValue("lastknown_lat_2" , info.currentLocation.toDegrees()[0].toFloat());
